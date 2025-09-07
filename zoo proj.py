@@ -3,29 +3,21 @@ class Animal:
         self.name = name
         self.age = age
 
-    def make_sound(self):
-        print("Some animal sound...")
-
-# Наследники
+    def feed(self):
+        print("Some animal food...")
 class Lion(Animal):
-    def make_sound(self):
-        print("Roar! 🦁")
-
+    def feed(self):
+        print("lion is being fed with meat.")
 class Monkey(Animal):
-    def make_sound(self):
-        print("Ooh-ooh! 🐒")
-
+    def feed(self):
+        print("Monkey is being fed with bananas.")
 class Elephant(Animal):
-    def make_sound(self):
-        print("Trumpet! 🐘")
+    def feed(self):
+        print("Elephant is being fed with grass.")
+lion = Lion("meat",5)
+monkey=Monkey("bananas",6)
+elephant=Elephant("grass",7)
+lion.feed()       
+monkey.feed()     
+elephant.feed()   
 
-# Создаём объекты
-lion = Lion("Симба", 5)
-monkey = Monkey("Джордж", 2)
-elephant = Elephant("Дамбо", 10)
-
-# Вызываем звуки
-lion.make_sound()      # Roar! 🦁
-monkey.make_sound()    # Ooh-ooh! 🐒
-elephant.make_sound()  # Trumpet! 🐘
- 
